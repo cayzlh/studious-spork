@@ -5,4 +5,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def homepage():
-    return redirect('https://github.com/cayzlh/silver-funicular')
+    return redirect('https://github.com/cayzlh/studious-spork')
