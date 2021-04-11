@@ -24,13 +24,13 @@ def github_json(owner, repo, branch):
 
 @app.route('/v1/<owner>', methods=['GET'])
 def start_owner(owner):
-    repo = 'issues-api'
-    branch = 'main'
+    repo = 'silver-funicular'
+    branch = 'master'
     return github_json(owner, repo, branch)
 
 @app.route('/v1/<owner>/<repo>', methods=['GET'])
 def start_owner_repo(owner, repo):
-    branch = 'main'
+    branch = 'master'
     return github_json(owner, repo, branch)
 
 @app.route('/v1/<owner>/<repo>/<branch>', methods=['GET'])
