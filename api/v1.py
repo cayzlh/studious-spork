@@ -24,7 +24,7 @@ def github_json(owner, repo, branch):
 
 @app.route('/v1/<owner>', methods=['GET'])
 def start_owner(owner):
-    repo = 'silver-funicular'
+    repo = 'studious-spork'
     branch = 'master'
     return github_json(owner, repo, branch)
 
