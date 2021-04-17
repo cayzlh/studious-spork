@@ -1,2 +1,3 @@
 # studious-spork
-friends
+
+power by [hexo-issuse-friends](https://github.com/Zfour/hexo-issuse-friends).

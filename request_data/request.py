@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
-# author: https://github.com/Zfour
 import requests
 import yaml
 requests.packages.urllib3.disable_warnings()
-
+_config.yml
+friendlist.json
+requirements.txt
+run.py
+time.log
 def load_config():
     f = open('_config.yml', 'r',encoding='gbk')
     ystr = f.read()
@@ -18,7 +21,7 @@ def get_data(link):
                  'Chrome/67.0.3396.99Safari/537.36'
     header = {'User_Agent': user_agent}
     try:
-        r = requests.get(link, headers=header, timeout=config['request']['timeout'],verify=config['request']['ssl'])
+        r = requests.get(link, headers=header, timeout=config['setting']['request']['timeout'],verify=config['setting']['request']['ssl'])
         r.encoding = 'utf-8'
         result = r.text.encode("gbk", 'ignore').decode('gbk', 'ignore')
         if str(r) == '<Response [404]>':

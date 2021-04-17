@@ -1,5 +1,5 @@
 ---
-name: 友链模板
+name: 申请交换链接模板
 about: 自助添加友链。请遵守 JSON 格式，在双引号中填写。
 title: ''
 labels: ''
