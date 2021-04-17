@@ -2,11 +2,7 @@
 import requests
 import yaml
 requests.packages.urllib3.disable_warnings()
-_config.yml
-friendlist.json
-requirements.txt
-run.py
-time.log
+
 def load_config():
     f = open('_config.yml', 'r',encoding='gbk')
     ystr = f.read()
